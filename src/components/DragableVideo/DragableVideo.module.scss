@@ -1,0 +1,31 @@
+.videoBanner {
+  display: flex;
+  margin: 1.5rem;
+  background-color: #4a4a4abb;
+  border: 1px solid #242424;
+  border-radius: 0.5rem;
+  box-shadow: 1px 2px #272727;
+  color: #ffffff;
+  padding: 0.5rem;
+  cursor: pointer;
+
+  &.selected {
+    background-color: #f7b438;
+  }
+
+  .image {
+    width: 160px;
+  }
+
+  .content {
+    margin: 0.5rem;
+
+    .title {
+      font-size: medium;
+    }
+
+    .subtitle {
+      font-size: small;
+    }
+  }
+}
