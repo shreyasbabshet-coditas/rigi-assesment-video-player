@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# Video Player App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a Video Player App built using React and TypeScript. It allows users to play videos, manage a playlist, and interact with draggable video components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Components
 
-## Expanding the ESLint configuration
+- **Playlist**: Displays a list of videos that users can play. Users can drag and drop videos to rearrange the playlist.
+- **VideoPlayer**: Renders the selected video and provides playback controls.
+- **DragableVideo**: A draggable video component that users can drag and drop within the playlist.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Running the App
 
-- Configure the top-level `parserOptions` property like this:
+To run the Video Player App locally, follow these steps:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. Clone this repository to your local machine.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Navigate to the project directory:
+
+   ```bash
+   cd video-player-app
+   npm install
+   npm run dev
+   ```
+
+## Project Structure
+
+video-player-app/
+├── public/ # Public assets and HTML template
+├── src/ # Source files
+│ ├── components/ # React components
+│ ├── styles/ # CSS or SCSS styles
+│ ├── App.tsx # Main application component
+│ ├── App.state.tsx # File having context and reducer
+│ └── index.tsx # Entry point for the application
+├── package.json # NPM package configuration
+└── README.md # Project documentation
