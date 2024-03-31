@@ -1,3 +1,4 @@
 {
-  "builds": [{ "src": "src/main.tsx", "use": "@vercel/node" }]
+  "builds": [{ "src": "src/main.tsx", "use": "@vercel/node" }],
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
