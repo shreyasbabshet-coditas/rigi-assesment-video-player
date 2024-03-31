@@ -26,6 +26,7 @@ To run the Video Player App locally, follow these steps:
 
 ## Project Structure
 
+```
 video-player-app/
 ├── public/ # Public assets and HTML template
 ├── src/ # Source files
@@ -36,3 +37,4 @@ video-player-app/
 │ └── index.tsx # Entry point for the application
 ├── package.json # NPM package configuration
 └── README.md # Project documentation
+```
